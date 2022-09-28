@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Encapsulated//Encypted</title>
+</head>
+<body>
+
+     <style>
+
+    @font-face { font-family: Mono ; src: url('fonts/mono.ttf'); } 
+    @font-face { font-family: Gatwick-Bold ; src: url('fonts/Gatwick-Bold.otf'); } 
+    @font-face { font-family: Gatwick-Light ; src: url('fonts/Gatwick-Ultralight.otf'); } 
+
+    body {
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 0; margin: 0;   
+    cursor: none;
+    
+    background-color: black;
+}
+.button-container {
+    display:flex;
+  flex-direction: column;
+  width: auto;
+  height: 96px;
+  margin-right: 48px;
+  align-items: flex-end;
+
+}
+
+
+.button-icon {
+    display: flex;
+    width: auto;
+    height: auto;
+
+    font-family: 'Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 30px;
+
+    color: #EEF0EF;
+
+    mix-blend-mode: exclusion;
+}
+
+.button-text {
+    display: flex;
+    margin-top: 16px;
+
+    
+    font-family: 'Gatwick-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+
+    color: #EEF0EF;
+
+    mix-blend-mode: exclusion;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    margin-top: 48px;
+    margin-left: 48px;
+    font-family: 'Gatwick-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px !important;
+    line-height: 24px;
+
+    color: #EEF0EF;
+
+}
+
+h4 {
+    line-height: 36px;
+}
+
+
+.paragraph {
+
+    margin-top: 0px;
+    margin-left: 48px;
+    margin-bottom: 48px;
+
+    width: 40vw;
+
+    font-family: 'Gatwick-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 32px;
+
+    color: #EEF0EF;
+
+
+
+}
+
+/* cursor stylization */
+
+div.cursors div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 60px;
+    height: 60px;
+    border: 2px;
+    border-style: dashed;
+    border-radius: 50%;
+    border-color: #EEF0EF;
+    z-index: 10000;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: exclusion;
+  
+}
+
+@media (max-width: 600px) {
+    .paragraph {
+        width: 80vw !important;
+    }
+
+    .button-icon {
+      font-size: 24px;
+      line-height: 24px;
+  
+    }
+
+    .button-text {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+
+    
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+
+.content {
+
+    color: #EEF0EF;
+     line-height: 50px;
+     font-family: Mono;
+     font-size: 48px;
+
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+</style>
+
+
+<a href="./index.html">
+    <div class = "button-container">
+          <div class = "button-icon">
+          x
+        </div>
+        <div class = "button-text">close </div>
+    </div>
+</a>
+
+<section id="main">
+<div class="header">
+    <h4> about the project: <br>
+        Encapsulated // Encrypted </h4>
+</div>
+
+<div class = "paragraph" >
+    <p>
+    "Lorem ipsum dolor sit amet, 
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </p>
+</div>
+
+
+</section>
+
+
+<div class="marquee">
+    <div class="track">
+    <div class ="content"> Encapsulated *** Encypted *** Encapsulated *** Encypted</div>
+</div>
+</div>
+
+<div class="cursors">
+    <div>
+
+      </div>
+</div>
+
+
+
+<script>
+
+    //cursor
+   const cursorTag = document.querySelector("div.cursors")
+   const ball = cursorTag.querySelector("div")
+   console.log(ball)
+
+   document.addEventListener("mousemove", function(event) {
+
+   ball.style.left = event.pageX + "px"
+   ball.style.top = event.pageY + "px"
+
+   })
+
+</script>
+
+    
+</body>
+</html>
