@@ -209,6 +209,8 @@ video {
 }
 
 .photo{
+    padding-top: 50px;
+    padding-bottom: 100px;
     display: flex;
     width: 480px;
     margin-bottom: 24px;
@@ -264,6 +266,10 @@ div.cursors div span {
     color: #EEF0EF;
     mix-blend-mode: exclusion;
 
+}
+
+.end{ 
+   height: 300px;
 }
   
   
