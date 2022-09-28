@@ -6,18 +6,18 @@ let imgCornery;
 let counter = 0;
 let privacy = Math.random(1);
 
-coverImage = ["https://uc738c17bbe5b930e9893ff6413d.dl.dropboxusercontent.com/cd/0/inline/Btw9VJx8CEEBDPMoqFUV1Qwyb2I86JQSJx8UZD6tCkzFVxZUdKJF3x6y_WHxiRBmnid4cjMhrMnA5sYY71Nx094VGjm73QMHqWYxVmBKRs21qHCeMychCqYxYcBcKzAvAJ6AmypIMqNCd2A0s54Lt_UmJnBptHLAAjFZREb9cLSoRg/file#",
-              "https://ucf946258f4b35d82102674f4ea2.dl.dropboxusercontent.com/cd/0/inline/BtzMXUTius1yxRX9XCKV9xxiq6rMtkOMU8BD8nmITB74-IABSVGIWMzXYQtj_O5A_I2c0DPpSt1caxzf1JfLxGZMXsif4dQ9Mu4J60HRz7c7_Xwi9KeyJbu21JtF4RB7OpL8jA_r2G4oLMTiR4gy3pWX3sMt1RyD4BXkG-JSzASCYQ/file#",
-              "https://uc10a3f6921334c49dae601e9362.dl.dropboxusercontent.com/cd/0/inline/Bty5yNwsmDSocxZGVTlG0s2rEWJoolAtiltjYVVaZwS09x6ErtIT_HBfVoD7UuYhq2M56L8QwB0RjkR4rWrkXgsxJQ5u5R5PzmnxiS7x0hrgi97J8Hm_peolIPhzq3JrotjPDPA6TTp0TbXnxtBy_0tHJba3QBmt-21a_ph5o_Dx7w/file#",
-              "https://uc4926a192a5f3ac13f89297b43c.dl.dropboxusercontent.com/cd/0/inline/BtxvEmvq4BmLIlPQhApm2JrWlvLhIUGXzTIoIGAPXozwrtHwuJ_I3Rb3djxGgGsPPurVLqTnGulUGAzOXV4v2kC25XfB9Xo0rfvNffTlKJt3_P6E0QW7s9V0tuq7_4Muy4g9W1eUYT6kiQh_7YoRTNsxpKFcJhn-4VIh8e8xWWjP2w/file#",
-              "https://uc719c71ccde28115f1fb7bd2118.dl.dropboxusercontent.com/cd/0/inline/BtzZwTH3f8TK0GEyHcnN7Wc4Fed12O8jrEJ_9c1_fJ1LEdQdufUvhg9REHBLFceB_rQ_pfuVjn2BbcPYs5BUmuE3a9L8OykefBryXQNPN0o0aMMfaruA1uRGF_XyGsGGz911FRnZED5ZpQcUTOj2szaYyMF1Dppx3_XD2ygeTpRTAQ/file#",
-              "https://uc99ea6f0f90f05c883e496b5104.dl.dropboxusercontent.com/cd/0/inline/BtxZlP4zUqlCfGGROEsfHbzyDkS2RN7ivfQdIanqZAnd82KLU3qhosCgVWwleawF9SLGvYsTrETQbMeJwTSWXj2Kq0bjd3W370-I8PVDUsKLTEXUCVktmhrxAcHJNlAOO1TyVaWFcsDcnBqs2gy6uaZIiKNnExUwJYtg67l_0S1rZw/file#",
-              "https://ucb4a5b39a67ecb4a67120cb01f7.dl.dropboxusercontent.com/cd/0/inline/BtxNdQ5-gnIvBHmp5QJDIItWeZMGN6UyEQQbU6Yg2s5aw5DCeu-L3fOBmHxRJOOeLSHLyCzOnGsOxdiiUDc12DbDDYNQ7d__JAvD7jN8k00zGxiN10gpt0FL9qI9DKVjNWNNbvqsaQwIlTxEjwTtACI9i2aO5LQdevZZF1VCYsEU5A/file#",
-              "https://uc15a5da65f078f3021e63accc7c.dl.dropboxusercontent.com/cd/0/inline/BtwbRyllzW2mnXS7Ua9jTwCWcZHd_SFHBF0LKl4CrTXv2C7QL0j7NJNGxKSf6bPE9gera8DXr_knvq3hVtRLjsccjjycm2ExvJNR29eO4RN4CiJDe6veo9Fbb_ysjg-9298h74US98FE2sPNpPb2w4HN11iL3LC-pO0bRb2QC4vqsg/file#",
-              "https://uc819aa1b21c561961c4a8e8b2a9.dl.dropboxusercontent.com/cd/0/inline/Bty2ysF9vcQLxinDrW2AIxBfi4-h-ZBR-BcKxR-U77fvKwGSH4XbPHQWM1rACImRugppacV9hcBuqUtLy8TREKViSvuH8N6mv_1fA4IBWJQyJyvFVRhLWKF9ZnCe24xZx0Qqw_Apwf-_92fRcAjpmgegNJozTe4c0ARiU-I_eY3UNg/file#",
-              "https://ucb87020d4d33022a29592632c69.dl.dropboxusercontent.com/cd/0/inline/BtwW0-evrKEFYzx5B8UuAXbSbcGfFhoLLXmlTR0nTedg1FPnOKWccAl-FUlAbcUGK9PM9k_5x0J-KRKnxnZmISocQyqy5wzJIDgq4RWdJfCW2CQfAP2OkxADRyFRv_r4hGWeh8f7unEjTrcs8Gp3sI_0q2bQSIPqsp-Or2px5cF8aw/file#",
-              "https://uc06647029af8b92ae75784d462d.dl.dropboxusercontent.com/cd/0/inline/Btwp-3fdP4jGomyRDeMinVkYfgLGB2e7X4_3ZfUjzutnbGW55CYDj31KQrG8q5qlwgHfnkq9YWbz-mG0JuoyDBgGmYCiOOUUCs7MGkp0WrQGmUTv_yLliKJcBsiRVYRx40FLd2zmlW--rztTivXGrtCFPBaIfOEvZqNxfz09bbFYkQ/file#",
-            ]
+coverImage = ["https://i.ibb.co/ygPYV7q/cover1.jpg",
+              "https://i.ibb.co/mvx2Cy5/cover2.jpg",
+              "https://i.ibb.co/c2xVwQR/cover3.jpg",
+              "https://i.ibb.co/MRbPbBm/cover4.jpg",
+              "https://i.ibb.co/QMQfQKJ/cover5.jpg",
+              "https://i.ibb.co/wC3C7tp/cover6.jpg",
+              "https://i.ibb.co/b6K99XS/cover7.jpg",
+              "https://i.ibb.co/wgsRPT7/cover8.jpg",
+              "https://i.ibb.co/W31B5kg/cover9.jpg",
+              "https://i.ibb.co/p1xgHCr/cover10.jpg",
+              "https://i.ibb.co/XZYr59x/cover11.jpg",
+            ];
 
 sketch.preload = () =>  {
   // img = sketch.loadImage("cover/cover" + Math.floor(sketch.random(1,12)) + ".jpeg");
