@@ -207,7 +207,6 @@
     video.addEventListener("mouseover", function() {
       cursorMessage.innerHTML = video.getAttribute("data-hover")
       video.play()
-      console.log(video);
     })
 
     video.addEventListener("mouseout", function() {
@@ -215,6 +214,24 @@
       video.pause()
       
     })
+	   
+    video.addEventListener("touchstart", function() {
+      cursorMessage.innerHTML = video.getAttribute("data-hover")
+      video.play()
+    })
+	  
+    video.addEventListener("touchend", function() {
+      cursorMessage.innerHTML= ""
+      video.pause()
+      
+    })
+
+
+
+      
+    })
+	   
+	   
    })
 	
       document.addEventListener("DOMContentLoaded", function () {
