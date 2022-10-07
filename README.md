@@ -12,7 +12,7 @@
 - To see the image processing on mobile devices, gallery images must be tapped.
 
 
-## How to run locally
+## how to run locally
 
 - For the lite version, 
   (where no on-site computation is made, only previously recorded content)
