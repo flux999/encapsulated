@@ -148,7 +148,7 @@ canvas {
 .flex-container-down {
     display: flex;
     justify-content: space-between;
-    padding-top: 56px
+    padding-top: 0px;
 }
 
 #logo-right {
