@@ -295,6 +295,9 @@ div.cursors div span {
       display: flex;
       justify-content: space-between;
       transform: translateY(-56px);
+        
+      mix-blend-mode: exclusion;
+
     }
   
     .logo-container{
