@@ -103,10 +103,7 @@ h4 {
     font-size: 16px !important;
     line-height: 32px;
 
-    color: #EEF0EF;
-
-
-
+    color: #EEF0EF !important;
 }
 
 /* cursor stylization */
@@ -129,6 +126,8 @@ div.cursors div {
 }
 
 @media (max-width: 600px) {
+
+
     .paragraph {
         width: 80vw !important;
     }
@@ -142,6 +141,10 @@ div.cursors div {
     .button-text {
         margin-top: 8px;
         font-size: 16px;
+    }
+
+    div.cursors div {
+        border: 0;
     }
 
     
@@ -159,7 +162,7 @@ div.cursors div {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 15s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 .content {
@@ -190,16 +193,21 @@ div.cursors div {
 
 <section id="main">
 <div class="header">
-    <h4> about the project: <br>
-        Encapsulated // Encrypted </h4>
+    <h4> about </h4>
 </div>
 
 <div class = "paragraph" >
     <p>
-    "Lorem ipsum dolor sit amet, 
-    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    Encapsulated // Encrypted(2022) is a digital gallery that uses image processing and deep learning as a method of self-censorship to alter the images and investigates the digital privacy concept through auto-biographical photography practices.
+    Images that are seen in the gallery are from the personal photo archive of <em>flux</em>, and fed into a deep learning algorithm which is trained according to her digital content sharing patterns. 
+    The privacy values are extracted from the images and can be seen when the photos in the gallery are hovered. While the values for private images are between -50 and 0, the public images show values between 0 and 50.
     </p>
+    
+   
+    <p>If you want to see the image processing in full length and on-site,  <a href="./index.html ">visit here.</a></p>
+
+    
+    <p>For collaborations and inquiries, mail us <strong>degerselena@gmail.com</strong></p>
 </div>
 
 
@@ -208,7 +216,7 @@ div.cursors div {
 
 <div class="marquee">
     <div class="track">
-    <div class ="content"> Encapsulated *** Encypted *** Encapsulated *** Encypted</div>
+    <div class ="content"> Encapsulated *** Encypted *** Encapsulated *** Encypted ***</div>
 </div>
 </div>
 
